@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 748.38 678.45"><defs>
+<style>@font-face {
+    font-family: AmaticsBold;
+    font-weight: bolder;
+    src: url('./fonts/AmaticSC-Bold.ttf');
+  }
+.cls-1{
+    font-size:120px;
+    fill:#baddee;
+    font-family:AmaticsBold;
+    font-weight:700;
+    letter-spacing:0.07em;
+    }</style></defs><title>logoAsset 3</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><text class="cls-1" transform="translate(91.37 523.64) scale(1 0.75)">What’s Inside</text><image width="1381" height="1195" transform="scale(0.54)" xlink:href="./IMG_0997.PNG"/></g></g></svg>
