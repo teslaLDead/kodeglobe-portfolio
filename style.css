@@ -395,3 +395,33 @@ h2{
     z-index: 1000;
     background: black;
 }
+
+#loading-screen > div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading-screen  img{
+    animation-name: loader;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* animation- */
+    /* transform: rotateZ('0deg'); */
+    animation-timing-function: linear;
+    height: 30px;
+}
+
+@keyframes loader{
+   from{
+        /* height: 25px; */
+        transform: rotateZ(0deg);
+    }
+
+    to{
+        /* height: 38px; */
+        transform: rotateZ(360deg);
+    }
+}
