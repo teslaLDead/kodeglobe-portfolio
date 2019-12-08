@@ -19,6 +19,15 @@ h1,h2,h3,h4{
     transform: scaleX(1.6);
 
 }
+#special-font{
+    position: absolute;
+            bottom: 20%;line-height: 55px;
+            left: 18%;
+}
+
+
+
+
 
 .flex-column{
     flex-direction: column;
@@ -268,7 +277,7 @@ max-width: 1170px;
     margin-top: 134px;
   }
 
-  @media (max-width:900px) {
+  @media  (max-width:900px)  {
     .px-5{
         padding-left: 1rem;
         padding-right: 1rem;
@@ -437,3 +446,34 @@ h2{
     align-items: center;
 }
 
+@media (max-width:750px){
+    #special-font{
+        left: 12%;
+    }
+
+    h1{
+        font-size: 80px;
+    }
+    p{
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .process-list{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #client-logo-container img{
+        max-width: 150px;
+    }
+    .small-svg{
+        transform: scale(0.60);
+    }
+    .service-list{
+        margin-top: -55%;
+        padding: 0 50px;
+    }
+    .reg-heading{
+        font-size: 28px;
+        letter-spacing: 1.2px;
+    }
+}
