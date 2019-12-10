@@ -10,16 +10,19 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="loading-bar.min.css"/>
+        
     </head>
     <body onload="removeSpinner()">
+       
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade y browser</a> to improve your experience.</p>
         <![endif]-->
 
         <div id="loading-screen">
             <div>
-                <img src="imgs/loader.svg" />
-                <p>Loading</p>
+                <div class="ldBar label-center" data-preset="circle"   style="height: 120px;width: 120px;"></div>
+                <p>LOADING</p>
             </div>
           
         </div>
@@ -489,8 +492,31 @@
         </div>
             
         </div>
-        <script src="script.js" async defer></script>
+        <script type="text/javascript" src="loading-bar.min.js"></script>
         <script>
+        var bar = new ldBar(".ldBar");
+        
+        var w=document.getElementsByTagName('img');
+            // console.log(w)
+
+            var i=0;
+            const l=w.length;
+            Object.values(w).forEach(value=>
+            {
+                // console.log('loaded')
+                // console.log(Math.round((i/l)*100))
+                value.onload=function(){
+                    bar.set(Math.round((i/l)*100));
+                }
+
+               
+               i++;
+               }
+                
+            );
+        
+        
+       
            function removeSpinner(){
                var c=document.getElementById('loading-screen');
                 var d=document.getElementsByTagName('body');
