@@ -502,8 +502,11 @@
            function removeSpinner(){
                var c=document.getElementById('loading-screen');
                 var d=document.getElementsByTagName('body');
-               c.style.display="none";
+                setTimeout(()=>{
+                    c.style.display="none";
                d[0].style.overflowY="scroll";
+                },600)
+               
                
            }
         </script>
