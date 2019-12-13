@@ -277,9 +277,9 @@ max-width: 1170px;
 
   @media  (max-width:900px)  {
 
-    /* html{
+    html{
         overflow-x: hidden;
-    } */
+    }
 
     .px-5{
         padding-left: 1rem;
@@ -450,6 +450,11 @@ h2{
 }
 
 @media (max-width:750px){
+
+    html{
+        overflow-x: hidden;
+    }
+
     #special-font{
         left: 12%;
     }
